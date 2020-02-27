@@ -1,11 +1,419 @@
----
-layout: default
-title: Georgios Rizos, PhD Student at Imperial College
----
-<div class="blurb">
-<p>Georgios Rizos graduated in 2012 from the School of Electrical and Computer Engineering of the Aristotle University of Thessaloniki. He continued with postgraduate studies at the Imperial College of London, where he acquired his M.Sc. with distinction in Biomedical Engineering in 2013.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Georgios Rizos Webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <style>
+  .navbar {
+  	margin-bottom: 0;
+  	border-radius: 0;
+  	background-color: #5E4485;
+  	color: #FFF;
+  	padding: 1% 0;
+  	font-size: 1.2em;
+  	border: 0;
+  }
+  .navbar-brand {
+  	float: left;
+  	min-height: 55px;
+  	padding: 0 15px 5px;
+  }
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  	color #FFF;
+  	background-color: #5E4485;
+  }
+  .navbar-inverse .navbar-nav li a {
+  	color: #D5D5D5;
+  }
 
-<p>Between 2013 and 2017 he worked at the Information Technologies Institute of the Centre for Research and Technology Hellas as a research assistant, applying machine learning techniques on large scale data from social networks in the context of the FP7-REVEAL and H2020-STEP projects. This work has led to the publication (among others) of a PLOS One article on multilabel online user classification using localized community detection.</p>
+  footer {
+  	width: 100%;
+  	background-color: #5E4485;
+  	padding: 3%;
+  	color: #FFF;
+  }
 
-<p>Georgios is currently carrying out his PhD in Reinforcement Learning via Bayesian Neural Networks under the supervision of Dr. Björn Schuller as a member of the HiPEDS Centre for Doctoral Training 2017 cohort. His PhD work is funded by the prestigious President's Scholarship of Imperial College London.</p>
-</div><!-- /.blurb -->
+  .fa {
+  	padding: 20px;
+  	font-size: 30px;
+  	color: #FFF;
+  }
+  .fa:hover {
+  	color: D5D5D5;
+  	text-decoration: none;
+  }
+  @media (max-width: 900px) {
+  	.fa {
+  		font-size: 20px;
+  		padding: 10px;
+  	}
+  }
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+img.resize {
+  max-width:70%;
+  max-height:70%;
+}
+
+
+.img-container {
+	text-align: center;
+    display: block;
+}
+
+
+/*<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">*/
+				
+
+  </style>
+</head>
+<body>
+
+<!-- 	<nav class="navbar navbar-expand-sm sticky-top">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="./index.html">Home</a></li>
+					<li><a href="#education">Education & Experience</a></li>
+					<li><a href="#publications">Publications</a></li>
+					<li><a href="#reviewing">Reviewing</a></li>
+					<li><a href="#organisation">Organisation</a></li>
+					<li><a href="#teaching">Teaching</a></li>
+		</ul>
+	</div>
+	</div>
+</nav> -->
+
+<nav class="navbar navbar-inverse sticky-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="./index.html">Home</a></li>
+					<li><a href="#education">Education & Experience</a></li>
+					<li><a href="#publications">Publications</a></li>
+					<li><a href="#organisation">Organisation</a></li>
+					<li><a href="#reviewing">Reviewing</a></li>
+					<li><a href="#awards">Awards</a></li>
+					<li><a href="#teaching">Teaching</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!-- 
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+			<img src="img/mountains.png">
+			<div class="carousel-caption">
+				<h1>About me</h1>
+				<br>
+				<button type="button" class="btn btn-default">Get Started</button>
+			</div>
+		    </div>
+		    <div class="item">
+		    	<img src="img/snow.png">
+		    </div>
+		    <div class="item">
+		    	<img src="img/red.png">
+		    </div>
+	</div>
+ -->
+
+    <div class="container">
+     	<div class="row">
+     		<div class="col-md-8">
+     			<h3 id="bio">Georgios Rizos - Doctoral Candidate at Imperial College</h3>
+     			<p>Georgios Rizos graduated in 2012 from the School of Electrical and Computer Engineering of the Aristotle University of Thessaloniki. He continued with postgraduate studies at the Imperial College of London, where he acquired his M.Sc. with distinction in Biomedical Engineering in 2013.</p>
+
+                <p>Between 2013 and 2017 he worked at the Information Technologies Institute of the Centre for Research and Technology Hellas as a research assistant, applying machine learning techniques on large scale data from social networks in the context of the FP7-REVEAL and H2020-STEP projects.</p>
+
+<!-- This work has led to the publication (among others) of a PLOS One article on multilabel online user classification using localized community detection.
+ -->
+                <p>Georgios is currently carrying out his PhD in Deep Uncertainty Quantification with applications in Active Learning, Reinforcement Learning, and Multimodal Data Analysis under the supervision of Dr. Björn Schuller as a member of the HiPEDS Centre for Doctoral Training 2017 cohort. His PhD work is funded by the prestigious President's Scholarship of Imperial College London.</p>
+
+                <p>For a detailed CV in PDF form, please <a href="#contact">contact</a> me.</p>
+
+                <p>(Website still under construction - code links to be added soon)</p>
+     		</div>
+     		<div class="col-sm-4">
+     			<span class="img-container">
+     				<img class="resize" src="img/rizos.jpg">
+     			</span>
+    	    	
+    	    </div>
+     	</div>
+    </div>
+
+    <div class="container">
+     	<div class="row">
+     		<div class="col-md-6">
+     			<h3 id="education">Education</h3>
+     			<h4><a href="https://www.imperial.ac.uk/computing">Imperial College London, UK</a></h4>
+     			<div id="textbox">
+     				<p class="alignleft"><b>PhD in Computing</b> <a href="https://glam.doc.ic.ac.uk/">@GLAM</a></p>
+     				<p class="alignright">Oct 2017 - Sep 2021 (expected)</p>
+     			</div><div style="clear: both;"></div>
+     			<p>Advised by Dr. Björn Schuller on <i>Deep Multi-Factor Uncertainty Modelling</i></p>
+     			 <ul>
+     			 	<li>4 <a href="#publications-conference">conference</a> papers (1 under review), 1 <a href="#publications-journal">journal</a> article (under revision), 1 <a href="#publications-abstract">abstract</a></li>
+     			 	<li>Contributor to 2 grant proposal submissions</li>
+     			 	<li>Contributed to the organisation of 2 machine learning <a href="#organisation">challenges</a></li>
+     			 	<li>Awarded the prestigious, full President’s scholarship by Imperial College [<a href="https://www.imperial.ac.uk/study/pg/graduate-school/phd-scholars/year-3-phd-scholars/">Q/A</a>]</li>
+     			 	<li>Helped supervise 7 MSc/BSc theses and 3 undergraduate placements</li>
+     			 	<li>Worked as a <a href="#teaching">teaching</a> assistant in 7 courses (BSc & MSc Computing)</li>
+     			 </ul> 
+     			<h4><a href="http://www.imperial.ac.uk/bioengineering">Imperial College London, UK</a></h4>
+     			<div id="textbox">
+     				<p class="alignleft"><b>MSc with distinction in Biomedical Engineering</b> <a href="http://wp.doc.ic.ac.uk/bbl/">@B&BLab</a></p>
+     				<p class="alignright">Sep 2012 - Sep 2013</p>
+     			</div><div style="clear: both;"></div>
+     			<p>Advised by Dr. Aldo Faisal on <i>Model-based Reinforcement Learning for Drug Delivery</i></p>
+     			<h4><a href="http://ee.auth.gr/en/">Aristotle University of Thessaloniki, Greece</a></h4>
+     			<div id="textbox">
+     				<p class="alignleft"><b>MEng in Electrical & Computer Engineering</b> <a href="http://users.auth.gr/pitsiani/">@CSALab</a></p>
+     				<p class="alignright">Sep 2005 - Sep 2012</p>
+     			</div><div style="clear: both;"></div>
+     			<p>Advised by Dr. Nikos Pitsianis on <i>Fast Local Correlation Coefficients (FLCC) Library</i> </p>
+     			<ul>
+     				<li>1 <a href="#publications-conference">conference</a> paper</li>
+     			 	<li>Library links <a href="http://autogpu.ee.auth.gr/doku.php?id=flcc">@AuTh</a> - <a href="http://flcc.cs.duke.edu/home">@Duke</a></li>
+     			 </ul> 
+     		</div>
+     		<div class="col-md-6">
+     			<h3>Experience</h3>
+     			<h4><a href="https://www.iti.gr/iti/index.html">Information Technologies Institute (CERTH-ITI)</a> </h4>
+     			<div id="textbox">
+     				<p class="alignleft"><b>Research Assistant</b> <a href="https://mklab.iti.gr/">@MKLab</a></p>
+     				<p class="alignright">Dec 2013 - Jul 2017</p>
+     			</div><div style="clear: both;"></div>
+     			<p>Advised by Dr. Symeon Papadopoulos and Dr. Ioannis Kompatsiaris</p>
+     			<ul>
+     			 	<li>1 <a href="#journal">journal</a> article, 1 <a href="#workshop">workshop</a> paper, and 1 extended <a href="#abstract">abstract</a></li>
+     			 	<li>Machine learning, and graph data analysis for online social media research</li>
+     			 	<li>Participation in European Commision projects: <a href="step4youth.eu">STEP H2020</a> and <a href="revealproject.eu">REVEAL FP7</a></li>
+     			 	<li>User requirements adaptation, R&D, project <a href="https://revealproject.eu/deliverables/">deliverables</a>, integration</li>
+     			 	<li>Collaboration with end users, researchers and software engineers</li>
+     			 </ul> 
+     			<h4><a href="https://www.veltio.com/">Veltio Greece Ltd</a></h4>
+     			<div id="textbox">
+     				<p class="alignleft"><b>Intern Software Engineer</b></p>
+     				<p class="alignright">Mar 2012 - May 2012</p>
+     			</div><div style="clear: both;"></div>
+                 <ul>
+     			 	<li>Core C++ data analysis library development</li>
+     			 	<li>Exposing core library API through Python</li>
+     			 </ul> 
+
+     		</div>
+     	</div>
+    </div>
+
+
+    <div class="container">
+     	<div class="row">
+     		<div class="col-md-12">
+     			<h3 id="publications">Publications</h3>
+     			<h4 id="publications-journal">Journal</h4>
+     			<p><b><i>(After first revision)</i></b> <b>Poisson CNN: Convolutional Neural Networks for the Solution of the Poisson Equation
+with Varying Meshes and Dirichlet Boundary Conditions</b> [<a href="https://arxiv.org/pdf/1910.08613.pdf">arxiv</a>]<br>
+Ozbay, A. G., Tzirakis, P., <b><i>Rizos, G.</i></b>, Schuller, B. & Laizet S.<br>
+<i>In Computers and Fluids (2019)</i> (2018 IF: 2.223) </p>
+
+                <p><b>Multilabel User Classification Using the Community Structure of Online Networks</b> [<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0173347">paper</a>]<br>
+                <b>(First)</b> <b><i>Rizos, G.</i></b>, Papadopoulos, S., & Kompatsiaris, Y.<br>
+<i>In PloS one (2017, March)</i> (2017 IF: 2.766) </p>
+     			<h4 id="publications-conference">Conference</h4>
+     			<p><b><i>(Accepted)</i> </b><b>The INTERSPEECH 2020 Computational Paralinguistics Challenge: Elderly Emotion, Breathing & Masks</b>      [<a href="http://www.compare.openaudio.eu/wp-content/uploads/2020/02/INTERSPEECH_2020_ComParE.pdf">whitepaper</a>]<br>
+                    <b></b> TOADD<br>
+               <i>In Interspeech 2020, September</i> </p>
+
+               <p><b><i>(Submitted)</i></b> <b><i>Anonymous</i> Submission on Document Classification Using Metadata Fusion</b><br>
+                <b>(Co-first)</b> <b><i>Rizos, G.</i></b>, Stappen, L, Hasan, M., Hain, T., & Schuller, B.<br>
+<i>In ACL 2020, July</i> </p>
+
+<p><b><i>(Accepted)</i></b> <b>StarGAN for Emotional Speech Conversion: Validated by Data Augmentation of End-to-End Emotion Recognition</b><br>
+                <b>(First)</b> <b><i>Rizos, G.</i></b>, Baird, A., Elliot, M., & Schuller, B.<br>
+                <i>In ICASSP 2020, May</i> </p>
+
+<p><b>Augment to Prevent: Short-Text Data Augmentation in Deep Learning for Hate-Speech
+Classification</b> [<a href="https://dl.acm.org/doi/10.1145/3357384.3358040">paper</a>] [<a href="https://medium.com/bcggamma/hunting-down-hate-speech-de0247c46def">blog</a>]<br>
+                <b>(Co-first)</b> <b><i>Rizos, G.</i></b>, Hemker, K., & Schuller, B.<br>
+<i>In CIKM 2019, November</i> <b>(20% acceptance rate)</b> </p>
+
+<p><b>Modelling Sample Informativeness for Deep Affective Computing</b> [<a href="https://ieeexplore.ieee.org/document/8683729">paper</a>]<br>
+                <b>(First)</b> <b><i>Rizos, G.</i></b>, & Schuller, B.<br>
+<i>In ICASSP 2019, July</i> </p>
+
+<p><b>Fast Computation of Local Correlation Coefficients on Graphics Processing Units</b> [<a href="https://users.cs.duke.edu/~nikos/reprints/C-032-LCCGPU-SPIE09.pdf">paper</a>]<br>
+                 Papamakarios, G., <b>Rizos, G.</b>, Pitsianis, N. P., & Sun, X.<br>
+<i>In SPIE Optical Engineering+ Applications 2009, August</i> </p>
+
+     			<h4 id="publications-workshop">Workshop</h4>
+
+                <p><b>Predicting News Popularity by Mining Online Discussions</b> [<a href="dl.acm.org/citation.cfm?id=2890096">paper</a>] [<a href="https://revealproject.eu/predicting-news-popularity-by-mining-online-discussions/">blog</a>]<br>
+                <b>(First)</b> <b><i>Rizos, G.</i></b>, Papadopoulos, S., & Kompatsiaris, Y.<br>
+<i>In WWW SNOW 2016, April</i> </p>
+
+     			<h4 id="publications-abstract">Conference (no proceedings) / Abstract</h4>
+
+     			<p><b>Convolutional Neural Networks for the Solution of the 2D Poisson Equation with Arbitrary Dirichlet Boundary Conditions, Mesh Sizes and Grid Spacings</b> [<a href="https://meetings.aps.org/Meeting/DFD19/Session/Q17.8">abstract</a>]<br>
+                Ozbay, A. G., Tzirakis, P., <b><i>Rizos, G.</i></b>, Schuller, B. & Laizet S.<br>
+<i>In Bulletin of the American Physical Society 2019, November</i> </p>
+
+<p><b>Learning to Classify Users in Online Interaction Networks</b> [<a href="https://www.usemp.eu/wp-content/uploads/2015/05/rizos_iccss2015.pdf">paper</a>]<br>
+                <b>(First)</b> <b><i>Rizos, G.</i></b>, Papadopoulos, S., & Kompatsiaris, Y.<br>
+<i>In ICCSS 2015, June</i> </p>
+     		</div>
+     	</div>
+    </div>
+
+    <div class="container">
+     	<div class="row">
+     		<div class="col-md-12">
+     			<h3 id="organisation">Challenge & Workshop Organisation</h3>
+     			<ul>
+     				<li> Contributed to the organisation of the <a href="http://www.compare.openaudio.eu/compare2020/">Interspeech Computational Paralinguistics Challenge (ComParE) 2020 Challenge</a></li>
+     				<li> Will serve as data chair to the recently accepted <a href="#">ACM MM Multimodal Sentiment Analysis in Real Life (MuSe) 2020 Challenge & Workshop</a></li>
+     			</ul>
+     		</div>
+     	</div>
+    </div>
+
+    <div class="container">
+     	<div class="row">
+     		<div class="col-md-12">
+     			<h3 id="reviewing">Reviewing</h3>
+     			<h4>Journal</h4>
+     			<ul>
+     				<li>IEEE - Transactions on Cybernetics (IF: 8.803): 2 </li>
+     				<li>Elsevier - International Journal of Approximate Reasoning (IF: 2.696): 1 </li>
+     				<li>Elsevier - Information Systems (IF: 1.832): 1 </li>
+     				<li>IET - Signal Processing (IF: 1.298): 1 </li>
+     				<li>IEEE - Transactions on Emerging Topics in Computational Intelligence (IF: 0.660): 1 </li>
+     				<li>Springer - Iranian Journal of Science and Technology, Transactions of Electrical Engineering (IF: 0.107): 1 </li>
+     			</ul>
+     			<h4>PC Member</h4>
+     			<ul>
+     				<li>SocInfo ’14,’15,’16,’17, COMPSAC/HCSC ’16,’17,’18
+WWW/SNOW ’16,’17, ESCSS ’17, ICCSS ’18,’19, ACL ’20. </li>
+
+     			</ul>
+     			<h4>Officially subreviewed</h4>
+     			<ul>
+     				<li>MMM ’15, ECIR ’15,’17, ICMR ’17, ICWSM ’20.</li>
+
+     			</ul>
+     		</div>
+     	</div>
+    </div>
+
+    <div class="container">
+     	<div class="row">
+     		<div class="col-md-12">
+     			<h3 id="awards">Honors, Awards, and Scholarships</h3>
+     			<ul>
+     				<li>Awarded the full President’s scholarship, Imperial College London, 2017 </li>
+     				<li>Offered the full HiPEDS CDT scholarship, Imperial College London, 2017 </li>
+     				<li>Distinction in MSc in Biomedical Engineering, Imperial College London, 2013 </li>
+     				<li>Awarded merit-based funding for short industrial placement during MEng, Aristotle University Thessaloniki, 2012 </li>
+     				<li><i>The Great Moment for Education</i>: Award for outstanding performance in the Greek National Exams, Eurobank EFG Group, Greece, 2005 </li>
+     			</ul>
+     		</div>
+     	</div>
+    </div>
+
+    <div class="container">
+     	<div class="row">
+     		<div class="col-md-12">
+     			<h3 id="teaching">Teaching</h3>
+     			<p>I have helped in tutoring & marking as a Teaching Assistant at Imperial College. In cases, I have led small group tutorials or helped develop tutorial & assignment material </p>
+     			<ul>
+     				<li>Computing MSc: Deep Learning, 2019-2020 </li>
+     				<li>2nd year Computing BSc: Probability and Statistics, 2018 and Computational Techniques, 2018 </li>
+     				<li>1st year Computing BSc: Mathematical Methods, 2018 and Hardware, 2018-2019 </li>
+     			</ul>
+
+     			<p>I have supervised a number of practical sessions for the Machine Learning and Data Science Workshop 2020 (<a href="http://www.cantabacademy.net/programmes/">MLDS ’20</a>) organised by Cantab Academy Ltd. </p>
+     		</div>
+     	</div>
+    </div>
+
+    <footer class="container-fluid text-center">
+    	<div class="row">
+    		<div class="col-sm-4">
+    			<h3 id="contact">Email</h3>
+    			<br>
+    			<h4>gr912[at]ic[dot]ac[dot]uk</h4>
+    		</div>
+    	    <div class="col-sm-4">
+    	    	<h3>Social</h3>
+    	    	<a href="https://twitter.com/georgios_rizos" class="fa fa-twitter"></a>
+    	    	<a href="https://scholar.google.gr/citations?user=Cx5SSpIAAAAJ" class="ai ai-google-scholar ai-2x"></a>
+    	    	<a href="https://www.linkedin.com/in/georgiosrizos/" class="fa fa-linkedin"></a>
+    	    	<a href="https://github.com/georgiosrizos" class="fa fa-github"></a>
+    	    </div>
+    	    <div class="col-sm-4">
+    	    	<!-- <img src="img/bunny.png" class="icon"> -->
+    	    </div>
+
+    	</div>
+    </footer>
+
+</body>
+</html>
