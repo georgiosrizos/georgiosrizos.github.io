@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+
+<nav>
+  <a href="{{ '/' | relative_url }}" class="nav-brand">G<span>.</span>Rizos</a>
+  <ul class="nav-links">
+    <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>About</a></li>
+    <li><a href="{{ '/publications' | relative_url }}"{% if page.url contains 'publications' %} class="active"{% endif %}>Publications</a></li>
+    <li><a href="{{ '/experience' | relative_url }}"{% if page.url contains 'experience' %} class="active"{% endif %}>Experience</a></li>
+    <li><a href="{{ '/service' | relative_url }}"{% if page.url contains 'service' %} class="active"{% endif %}>Service</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  {{ content }}
+
+  <footer>
+    <p>Georgios Rizos &mdash; Last updated 2026 &mdash; Built with Jekyll &amp; GitHub Pages</p>
+  </footer>
+</div>
+
+<script>
+  // Highlight active nav link based on scroll position (single-page fallback)
+  const links = document.querySelectorAll('.nav-links a');
+  links.forEach(l => {
+    if (l.getAttribute('href') === window.location.pathname) {
+      l.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>

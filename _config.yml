@@ -1,0 +1,22 @@
+title: Georgios Rizos
+description: AI scientist & engineer, PhD
+url: "https://georgiosrizos.github.io"
+baseurl: ""
+
+author:
+  name: Georgios Rizos
+  email: georgevrizos[at]gmail[dot]com
+  github: georgiosrizos
+  scholar: "https://scholar.google.com/citations?user=JzH5CgUAAAAJ"
+  linkedin: "https://www.linkedin.com/in/georgiosrizos"
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
