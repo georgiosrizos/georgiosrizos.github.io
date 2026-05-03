@@ -2,6 +2,8 @@
 
 Personal website built with Jekyll + GitHub Pages.
 
+Used a few Claude tokens to make this look better.
+
 ## Local preview (optional)
 
 ```bash
