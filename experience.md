@@ -174,7 +174,7 @@ permalink: /experience/
 <section id="teaching">
   <div class="section-header"><h2>Teaching</h2></div>
   <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem;">
-    Teaching assistant and lecturer at the University of Cambridge and Imperial College London &mdash; tutoring, marking, small-group tutorials, and development of tutorial and assignment material.
+    Teaching assistant at the University of Cambridge and Imperial College London &mdash; tutoring, marking, small-group tutorials, and development of tutorial and assignment material.
   </p>
   <ul class="list-clean">
     <li><span>UoC &mdash; Mobile Health (MPhil, Part III)</span><span class="list-count">2023–2024</span></li>
